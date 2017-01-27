@@ -8,7 +8,7 @@ public class demo {
         int[] arr={5,3,7,2,4,1,9,0};
 
 
-        bubbleSort.sort(arr);
+        selectionSort.sort(arr);
 
         System.out.print("printing the sorted array--->");
         for(int i=0;i<arr.length;i++)
