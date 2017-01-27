@@ -12,8 +12,12 @@ public class insertionSort {
         * by comparing the element from the last index and place it order while comparing
         * -- this is what we do in while loop*/
 
+
+        //loop the unsorted array
         for(int i=0;i<arr.length;i++){  //***** O(N)
             int j=i;
+            // take the element and compare it with previous elemnts -- thse prev elements are in sorted array
+            // loop till you reach the 1st element and or till you find smallest elemet than our element
             while(j>0 && arr[j]<arr[j-1]) {  // **** O(N)
                 swapClass.swap(arr, j, j - 1);
                 j--;
