@@ -21,5 +21,5 @@ public class bubbleSort {
 }
 
 
-// total complexity O(N^2)
+// total worse complexity O(N^2), although the input is sorted , we need to loop through N*N loops -> N^2
 
