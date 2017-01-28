@@ -1,4 +1,4 @@
-package doubleLinkedList;
+package Stack;
 
 /**
  * Created by venkata_kalluri on 1/27/2017.
@@ -6,7 +6,6 @@ package doubleLinkedList;
 public class Node<T> {
     private T data;
     private Node nextNode;
-    private Node prevNode;
 
     public T getData() {
         return data;
@@ -24,20 +23,14 @@ public class Node<T> {
         this.nextNode = nextNode;
     }
 
-    public Node getPrevNode() {
-        return prevNode;
-    }
-
-    public void setPrevNode(Node prevNode) {
-        this.prevNode = prevNode;
-    }
-
     public Node(T data){
-
         this.data=data;
+
     }
 
+    @Override
     public String toString(){
-        return "DATA: "+this.data;
+        return "Data: "+this.data;
     }
+
 }
